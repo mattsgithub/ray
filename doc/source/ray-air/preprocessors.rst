@@ -23,7 +23,7 @@ For example, the following code trains a model with a preprocessor that normaliz
     :start-after: __trainer_start__
     :end-before: __trainer_end__
 
-The  ``Preprocessor`` class with four public methods that can we used separately from a trainer:
+The  ``Preprocessor`` class with four public methods that can be used separately from a trainer:
 
 #. ``fit()``: Compute state information about a :class:`Dataset <ray.data.Dataset>` (e.g., the mean or standard deviation of a column)
    and save it to the ``Preprocessor``. This information is used to perform ``transform()``, and the method is typically called on a
